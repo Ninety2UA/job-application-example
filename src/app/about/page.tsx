@@ -19,12 +19,26 @@ export default function AboutPage() {
         animate={{ opacity: 1, y: 0 }}
         className="mb-12"
       >
-        <p className="text-sm font-medium uppercase tracking-widest text-accent">
-          About
-        </p>
-        <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
-          Why KLAR + Dominik
-        </h1>
+        <div className="flex items-start justify-between">
+          <div>
+            <p className="text-sm font-medium uppercase tracking-widest text-accent">
+              About
+            </p>
+            <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
+              Why KLAR + Dominik
+            </h1>
+          </div>
+          <a
+            href="/resume/dominik-benger-resume.pdf"
+            download
+            className="hidden sm:inline-flex items-center gap-2 rounded-full border border-card-border px-5 py-2.5 text-sm font-medium text-muted transition-colors hover:border-accent/30 hover:text-foreground"
+          >
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            Download Resume
+          </a>
+        </div>
       </motion.div>
 
       {/* Why KLAR narrative */}
