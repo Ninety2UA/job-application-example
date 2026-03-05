@@ -2,8 +2,8 @@
 
 ## What we're building
 - Interactive job application web app for KLAR (getklar.com) — Next.js 16 App Router, TypeScript, Tailwind CSS v4, Recharts, Gemini Flash AI chatbot
-- 8 pages: Landing, Analysis, Recommendations (overview + 5 individual), About, 404
-- 5 interactive MVP prototypes demonstrating strategic recommendations
+- 13 pages: Landing, Analysis, Recommendations (overview + 10 individual), About, 404
+- 10 interactive MVP prototypes (5 cross-role + 5 PO Marketing Measurement deep-dive)
 - AI chatbot with KLAR-specific knowledge base
 - Dark mode, KLAR-aligned design (emerald/green accents, Satoshi font)
 - Deployed to Vercel at `dbenger-job-application-klar.vercel.app`
@@ -20,27 +20,34 @@
 | 0d7c687 | chore: update metadata URLs to dbenger-job-application-klar.vercel.app |
 
 ## Current state
-- **Git:** `main` branch, 7 commits, clean working tree
+- **Git:** `main` branch, 7 commits, **uncommitted changes** (8 modified + 5 new files)
 - **Build:** Passes cleanly (`npm run build`)
-- **Code:** All pages and components implemented, two rounds of code review fixes applied
+- **Code:** 10 MVPs complete (5 cross-role + 5 PO Marketing Measurement), recommendations split into two sections
 - **Review:** TypeScript code review completed — critical/high/medium findings resolved
-- **Testing:** Desktop and mobile browser testing completed (Playwright screenshots)
-- **Deployment:** Live at https://dbenger-job-application-klar.vercel.app with GEMINI_API_KEY configured
-- **Research:** 4 research agents completed (KLAR website, competitors, eCom Unity/founders, job descriptions) — data available for content enhancement
+- **Testing:** Desktop browser testing done; mobile responsive testing needed for new MVPs
+- **Deployment:** Last deploy at https://dbenger-job-application-klar.vercel.app — uncommitted changes NOT yet deployed
+- **Vercel:** Deployment Protection disabled for public access (was blocking mobile visitors)
 
 ### Route Map
 ```
-○ /                     → Landing page (hero, CTA, stats)
-○ /analysis             → 5-section business analysis (expandable, competitive table)
-○ /recommendations      → Card grid overview of 5 recommendations
-● /recommendations/[1-5] → Individual recommendation + interactive MVP
-○ /about                → Skills matrix, proof points, "Let's Talk" CTA
-○ /_not-found           → Custom 404
-ƒ /api/ai/chat          → Gemini Flash chat proxy (force-dynamic)
-ƒ /opengraph-image      → Edge-generated OG image (1200x630)
+○ /                      → Landing page (hero, CTA, stats — updated to "10" recs/MVPs)
+○ /analysis              → 5-section business analysis (expandable, competitive table)
+○ /recommendations       → Card grid — split into Cross-Role (1-5) and PO Measurement (6-10)
+● /recommendations/[1-10] → Individual recommendation + interactive MVP
+○ /about                 → Skills matrix, proof points, "Let's Talk" CTA
+○ /_not-found            → Custom 404
+ƒ /api/ai/chat           → Gemini Flash chat proxy (force-dynamic)
+ƒ /opengraph-image       → Edge-generated OG image (1200x630)
 ```
 
+### Uncommitted Changes
+- **New files:** Rec6MVP.tsx, Rec7MVP.tsx, Rec8MVP.tsx, Rec9MVP.tsx, Rec10MVP.tsx
+- **Modified:** recommendations.ts (5→10 entries), RecommendationContent.tsx (registers 10 MVPs), recommendations/page.tsx (two-section layout), page.tsx (stats updated), globals.css (color refinements), FloatingNav.tsx (glow), ChatWidget.tsx (new suggestions), klar-knowledge.ts (expanded to 10 recs)
+
 ## What's next
-- **Performance audit:** Lighthouse score, bundle size check
-- **Content enhancement:** Incorporate research findings — corrected founder names (Max Rast, Cillie Burger, Frank Birzle), richer competitor data, deeper analysis sections
-- **Server rendering:** Consider extracting animations to client wrappers so pages can be server-rendered (improves LCP)
+- **Commit and deploy** uncommitted changes
+- **Design overhaul:** /ui-ux-pro-max recommendations were generated but barely applied — typography scale, card redesign, gradient accents, chart styling still pending
+- **Performance audit:** Lighthouse score, bundle size check (T48)
+- **Content enhancement:** Incorporate research findings into analysis page (T63)
+- **Responsive testing:** New MVPs (especially Rec6-10) need mobile testing
+- **Server rendering:** Consider extracting animations to client wrappers (improves LCP)

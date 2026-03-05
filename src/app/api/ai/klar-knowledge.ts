@@ -39,7 +39,9 @@ Performance Marketing (Google Ads, Meta Ads, App Campaigns), BigQuery, Looker, S
 **Customers:** 2,000+ eCom/DTC brands (Loop Earplugs, Holy, Snocks, BLACKROLL, Armed Angels, yfood)
 **Community:** eCom Unity — 2,000+ operators, invitation-only Slack community, events at OMR/K5
 **Newsletter:** Written by Max Rast, biweekly, covers eCom strategy and profitability
-**Team:** ~20-30 people, Munich HQ, distributed-first. Founded by Max Rast (CEO), Cillier Roux (CTO), Frank Roux (CTO)
+**Team:** 50+ ("Klardashians"), 70% engineers/30% eCom practitioners, Munich HQ. Founded by Max Rast (CEO), Cillie Burger (CTO), Frank Birzle (CTO) — met at Zando (Rocket Internet) in Cape Town
+**Funding:** €2.3M seed (Cherry Ventures, 2022)
+**Pricing:** €200/mo (Core) to €3,150/mo (Core+Attribution), revenue-based tiers
 **Guiding Principle:** "Do Work You Are Proud Of"
 **Case Studies:** Maniko (744% revenue growth), Bergmensch (+256% CM3)
 
@@ -53,19 +55,27 @@ Performance Marketing (Google Ads, Meta Ads, App Campaigns), BigQuery, Looker, S
 
 ### OPEN ROLES
 1. **Growth Lead** — amplify inbound flywheel, paid acquisition (max@getklar.com)
-2. **PO Marketing Measurement** — attribution product IC, MTA/MMM/incrementality (product-hiring@getklar.com)
+2. **PO Marketing Measurement** — IC Product Owner within the Measurement (Attribution) team. Owns MTA, MMM, and incrementality. Works alongside data science, engineering, and design. Requires 5+ years PM experience, written communication emphasis. Reports to product leadership, interviews with CEO Max and co-founders. (product-hiring@getklar.com)
 3. **Product Adoption & Experience Manager** — onboarding, education (uli@getklar.com)
 4. **Senior eCom Manager** — customer-facing strategic partner (franz@getklar.com)
 
 ---
 
-## 5 RECOMMENDATIONS
+## 10 RECOMMENDATIONS
 
+### Cross-Role Strategies (1-5)
 1. **Attribution Confidence Score Dashboard** — surface data quality metrics alongside attribution data. Helps brands know when to trust numbers. Maps to PO Marketing Measurement and Senior eCom Manager roles.
 2. **Paid Growth Playbook for B2B with B2C DNA** — Meta/LinkedIn campaign framework with funnel calculator. Maps to Growth Lead and Senior eCom Manager roles.
 3. **Customer Onboarding Flow Optimizer** — segmented onboarding wizard by brand size/channels/goals. Maps to Product Adoption & Experience and Senior eCom Manager roles.
 4. **Cross-Channel Creative Performance Analyzer** — unified creative dashboard across Meta/Google/TikTok. Maps to PO Marketing Measurement and Growth Lead roles.
 5. **eCom Unity Community Conversion Pipeline** — engagement scoring to bridge community and sales pipeline. Maps to Growth Lead and Product Adoption roles.
+
+### PO Marketing Measurement Deep-Dive (6-10)
+6. **Attribution Model Comparator** — side-by-side comparison of how KLAR's 7 attribution models (Last-Click, First-Touch, Linear, U-Shape, Data-Driven, MMM) credit the same revenue differently across channels. Shows the "conflict zones" where budget decisions are most vulnerable to model choice. Maps to PO Marketing Measurement.
+7. **Channel Saturation Curve Analyzer** — interactive diminishing returns curves per channel, powered by MMM. Shows where marginal ROAS declines and identifies optimal budget allocation without increasing total spend. Maps to PO Marketing Measurement.
+8. **Incrementality Test Planner** — self-service geo-holdout test designer with power calculations, sample size requirements, and projected treatment vs control outcomes. Based on 2025 benchmarks showing platform ROAS often overstates true incrementality. Maps to PO Marketing Measurement.
+9. **Privacy Signal Loss Simulator** — quantifies the attribution gap from iOS ATT opt-out (~70%), cookie consent, and cross-device blindness. Shows how KLAR's first-party tracking recovers ~65% of lost signal vs pixel-only attribution. Maps to PO Marketing Measurement.
+10. **Unified Measurement Framework** — triangulates MTA, MMM, and incrementality into a single confidence-weighted estimate per channel. KLAR's key differentiator — no competitor unifies all three methods. Shows how combining methods increases confidence vs any single method alone. Maps to PO Marketing Measurement.
 
 ---
 

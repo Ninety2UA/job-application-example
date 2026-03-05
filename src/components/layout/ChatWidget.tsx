@@ -18,8 +18,8 @@ const suggestedQuestions: Record<string, string[]> = {
   ],
   "/recommendations": [
     "Which recommendation is strongest?",
-    "How do these map to open roles?",
-    "What data backs these proposals?",
+    "Tell me about the PO Marketing Measurement MVPs",
+    "How does the unified measurement framework work?",
   ],
   "/about": [
     "What did Dominik do at Google?",
@@ -67,11 +67,13 @@ export default function ChatWidget() {
     await sendMessage(q);
   };
 
+  const isHomePage = pathname === "/";
+
   return (
     <>
-      {/* FAB */}
+      {/* FAB — hidden on home page where chat is embedded */}
       <AnimatePresence>
-        {!isOpen && (
+        {!isOpen && !isHomePage && (
           <motion.button
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}

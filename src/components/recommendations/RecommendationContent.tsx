@@ -9,6 +9,11 @@ import Rec2MVP from "./Rec2MVP";
 import Rec3MVP from "./Rec3MVP";
 import Rec4MVP from "./Rec4MVP";
 import Rec5MVP from "./Rec5MVP";
+import Rec6MVP from "./Rec6MVP";
+import Rec7MVP from "./Rec7MVP";
+import Rec8MVP from "./Rec8MVP";
+import Rec9MVP from "./Rec9MVP";
+import Rec10MVP from "./Rec10MVP";
 
 const mvpComponents: Record<number, React.ComponentType> = {
   1: Rec1MVP,
@@ -16,6 +21,11 @@ const mvpComponents: Record<number, React.ComponentType> = {
   3: Rec3MVP,
   4: Rec4MVP,
   5: Rec5MVP,
+  6: Rec6MVP,
+  7: Rec7MVP,
+  8: Rec8MVP,
+  9: Rec9MVP,
+  10: Rec10MVP,
 };
 
 export default function RecommendationContent({

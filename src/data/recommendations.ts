@@ -121,4 +121,115 @@ export const recommendations: Recommendation[] = [
     roles: ["Growth Lead", "Product Adoption & Experience"],
     icon: "users",
   },
+  // --- PO Marketing Measurement Deep-Dive ---
+  {
+    id: 6,
+    title: "Attribution Model Comparator",
+    subtitle: "See how different models tell different stories about the same revenue",
+    insight:
+      "eCom brands using platform-reported last-click data overcount conversions by 30-50%. Different attribution models credit channels differently — making budget decisions unreliable without model comparison. KLAR already offers 7 models, but brands rarely understand why the numbers diverge.",
+    opportunity:
+      "A side-by-side model comparison view answers the #1 question from new KLAR customers: 'Why don't your numbers match Facebook?' Showing exactly how credit shifts between models builds trust, reduces churn from attribution confusion, and makes the case for KLAR's advanced Data-Driven and MMM models.",
+    proposal: [
+      "Build a model comparison view where brands select 2-3 attribution models and see revenue credit shift across channels in real time",
+      "Highlight the biggest disagreement between models with a 'conflict zone' callout — this is where budget decisions are most vulnerable",
+      "Add a 'Model Recommendation Engine' that suggests the best model based on brand's customer journey length, channel mix, and data maturity",
+      "Create educational tooltips explaining *why* each model credits differently — turning confusion into understanding",
+    ],
+    skillMapping: [
+      "Developed iOS SKAN Reporting Pack at Google — navigating attribution model transitions at scale",
+      "Built KPI scorecards comparing attribution methodologies across 25+ advertiser accounts",
+      "Deep expertise in multi-touch attribution from managing $XXXmm+ quarterly ad spend",
+    ],
+    roles: ["PO Marketing Measurement"],
+    icon: "scale",
+  },
+  {
+    id: 7,
+    title: "Channel Saturation Curve Analyzer",
+    subtitle: "Find where your next dollar stops working",
+    insight:
+      "Most eCom brands scale ad spend linearly without understanding diminishing returns. Spending 2x on a channel rarely returns 2x — channels saturate, CPAs rise, and marginal ROAS declines. Saturation curves are the key output of MMM that directly drives budget decisions.",
+    opportunity:
+      "Visualizing diminishing returns curves per channel is the 'aha moment' that sells MMM to skeptical brands. KLAR's MMM model already calculates these curves — surfacing them as an interactive budget simulator would be the most compelling feature demo in sales calls and the most used dashboard by power users.",
+    proposal: [
+      "Surface saturation curves from KLAR's MMM engine as interactive visualizations per channel",
+      "Add a budget optimizer that recommends reallocation from saturated to under-invested channels — showing projected revenue lift without increasing total spend",
+      "Build a 'What-If' simulator: drag budget between channels and see projected ROAS change in real time",
+      "Include historical saturation drift — show how curves shift seasonally (Q4 saturation differs from Q1)",
+    ],
+    skillMapping: [
+      "Optimized $XXXmm+ quarterly ad budgets across channels at Google — directly worked with saturation dynamics",
+      "Built automated performance analysis pipelines that identified diminishing returns patterns",
+      "Experience with MMM concepts and budget allocation frameworks at enterprise scale",
+    ],
+    roles: ["PO Marketing Measurement"],
+    icon: "trending",
+  },
+  {
+    id: 8,
+    title: "Incrementality Test Planner",
+    subtitle: "Design holdout experiments with statistical rigor",
+    insight:
+      "Platform-reported ROAS frequently overstates true incrementality. 2025 benchmarks from Stella showed no consistent relationship between platform ROAS and actual incremental lift — some brands showed 4.0x platform ROAS but <1.0x incrementality factor. Without holdout testing, brands are flying blind.",
+    opportunity:
+      "KLAR's incrementality testing (currently in beta) could become a key differentiator. A self-service test planner that handles power calculations, geo-region selection, and projected outcomes would justify the Core+Attribution tier and give brands confidence that their measurement is grounded in causal evidence, not correlation.",
+    proposal: [
+      "Build a self-service incrementality test planner: select channel, configure holdout %, test duration, and daily spend",
+      "Auto-calculate statistical power, minimum detectable effect, and required sample size — remove the need for a data scientist",
+      "Add a test timeline visualization showing projected treatment vs control group outcomes",
+      "Feed test results back into MTA and MMM calibration — creating a feedback loop that improves all measurement over time",
+    ],
+    skillMapping: [
+      "Designed A/B testing and incrementality measurement frameworks at Google for app campaigns",
+      "Built automated analysis pipelines with statistical rigor for 25+ advertiser accounts",
+      "Experience with geo-based testing methodologies and causal inference in advertising",
+    ],
+    roles: ["PO Marketing Measurement"],
+    icon: "beaker",
+  },
+  {
+    id: 9,
+    title: "Privacy Signal Loss Simulator",
+    subtitle: "Quantify what you can't see in a cookieless world",
+    insight:
+      "~70% of iOS users opt out of tracking after ATT. Third-party cookies are dying. Cross-device journeys are invisible. eCom brands lose 30-60% of their attribution data to privacy changes — and most don't realize how much they're missing or how it distorts their decisions.",
+    opportunity:
+      "A simulator showing the growing gap between platform-reported metrics and reality would be KLAR's most powerful sales tool. It turns 'trust our first-party attribution' into 'see exactly how much your current setup is missing' — making the ROI of KLAR's tracking crystal clear.",
+    proposal: [
+      "Build an interactive signal loss simulator with sliders for iOS ATT opt-out rate, cookie consent rate, and cross-device blindness",
+      "Show a real-time waterfall chart: total conversions → visible conversions → modeled recoverable → permanently invisible",
+      "Compare platform-reported performance vs estimated true performance — quantifying the 'attribution gap'",
+      "Add a 'KLAR recovery rate' showing how much signal KLAR's first-party tracking recovers compared to pixel-only attribution",
+    ],
+    skillMapping: [
+      "Developed iOS SKAN Reporting Pack handling attribution confidence in privacy-constrained environments",
+      "Expert in SKAdNetwork, ATT frameworks, and privacy-first measurement from Google",
+      "Managed advertiser transitions through iOS 14.5 — firsthand experience with signal loss impact",
+    ],
+    roles: ["PO Marketing Measurement"],
+    icon: "eye-off",
+  },
+  {
+    id: 10,
+    title: "Unified Measurement Framework",
+    subtitle: "Triangulate truth from MTA, MMM, and incrementality",
+    insight:
+      "No single measurement method gives the full picture. MTA is granular but misses non-click impact. MMM captures upper-funnel effects but lacks campaign-level precision. Incrementality is ground truth but can't run continuously. Each method has blind spots — used alone, they mislead.",
+    opportunity:
+      "KLAR's unified measurement engine — combining MTA, MMM, and incrementality — is their single strongest differentiator. No competitor unifies all three into one dynamic model. Visualizing how these three methods converge on a 'triangulated truth' for each channel would be the ultimate product vision showcase.",
+    proposal: [
+      "Build a per-channel measurement dashboard showing three independent estimates (MTA, MMM, incrementality) with confidence intervals",
+      "Calculate a 'Unified Estimate' that weights each method based on data quality and recency — showing higher confidence than any single method alone",
+      "Add a 'Measurement Health' indicator showing which methods have fresh data and which need recalibration",
+      "Create a methodology explainer that educates brands on *why* triangulation produces better decisions than any single method",
+    ],
+    skillMapping: [
+      "Built measurement frameworks combining multiple attribution methodologies at Google (SKAN, MTA, MMPs)",
+      "Pioneered end-to-end performance insights platform synthesizing data from multiple measurement sources",
+      "Expert in translating complex measurement concepts into actionable business insights for C-suite audiences",
+    ],
+    roles: ["PO Marketing Measurement"],
+    icon: "triangle",
+  },
 ];

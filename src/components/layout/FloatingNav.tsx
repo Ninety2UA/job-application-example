@@ -21,7 +21,7 @@ export default function FloatingNav() {
       <nav className="mx-auto max-w-5xl px-4 py-3">
         <div className="flex items-center justify-between rounded-2xl border border-card-border bg-card/80 px-5 py-3 backdrop-blur-xl">
           <Link href="/" className="text-sm font-bold tracking-tight">
-            DB <span className="text-accent">x</span> KLAR
+            DB <span className="text-accent" style={{ textShadow: "0 0 12px rgba(16,185,129,0.3)" }}>x</span> KLAR
           </Link>
 
           {/* Desktop nav */}

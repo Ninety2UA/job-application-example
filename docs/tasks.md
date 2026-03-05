@@ -98,6 +98,33 @@
 | T61 | Validate and truncate chat history items (security) | Done |
 | T62 | Increase hamburger touch target to 44x44px | Done |
 
+## Phase 8: PO Marketing Measurement MVPs (Session 4)
+| Task | Description | Status |
+|------|-------------|--------|
+| T67 | Research KLAR measurement product (MTA, MMM, incrementality, attribution models) | Done |
+| T68 | Add 5 new recommendation entries to recommendations.ts (IDs 6-10) | Done |
+| T69 | Build Rec6MVP — Attribution Model Comparator (grouped bar chart, 6 models) | Done |
+| T70 | Build Rec7MVP — Channel Saturation Curve Analyzer (area chart, diminishing returns) | Done |
+| T71 | Build Rec8MVP — Incrementality Test Planner (line chart, power calculations) | Done |
+| T72 | Build Rec9MVP — Privacy Signal Loss Simulator (stacked bar, 3 sliders) | Done |
+| T73 | Build Rec10MVP — Unified Measurement Framework (bar chart + error bars, confidence) | Done |
+| T74 | Register Rec6-10 in RecommendationContent.tsx | Done |
+| T75 | Split recommendations/page.tsx into Cross-Role + PO Measurement sections | Done |
+| T76 | Update landing page stats (5→10 recommendations/MVPs) | Done |
+| T77 | Expand klar-knowledge.ts with 10 recommendations + PO role details | Done |
+| T78 | Update ChatWidget suggested questions for measurement topics | Done |
+| T79 | Commit and deploy session 4 changes | Pending |
+
+## Design Overhaul (from /ui-ux-pro-max)
+| Task | Description | Status |
+|------|-------------|--------|
+| T80 | Apply typography scale improvements (heading hierarchy, line-height) | Pending |
+| T81 | Redesign card components (subtle gradients, better borders) | Pending |
+| T82 | Polish chart styling (grid lines, tooltips, legends) | Pending |
+| T83 | Improve hero section impact (gradient text, stronger CTA) | Pending |
+| T84 | Navigation polish (active states, transitions) | Pending |
+| T85 | Overall spacing and visual hierarchy pass | Pending |
+
 ## Future Improvements (from code review)
 | Task | Description | Status |
 |------|-------------|--------|
