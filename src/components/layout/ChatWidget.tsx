@@ -96,7 +96,7 @@ export default function ChatWidget() {
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            className="fixed bottom-0 right-0 z-50 flex h-full w-full flex-col border-l border-card-border bg-background sm:bottom-6 sm:right-6 sm:h-[500px] sm:w-[380px] sm:rounded-2xl sm:border"
+            className="fixed inset-0 z-50 flex flex-col border-l border-card-border bg-background sm:inset-auto sm:bottom-6 sm:right-6 sm:h-[500px] sm:w-[380px] sm:rounded-2xl sm:border"
           >
             {/* Header */}
             <div className="flex items-center justify-between border-b border-card-border px-4 py-3">
@@ -165,7 +165,7 @@ export default function ChatWidget() {
             </div>
 
             {/* Input */}
-            <form onSubmit={handleSubmit} className="border-t border-card-border p-3">
+            <form onSubmit={handleSubmit} className="border-t border-card-border p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
               <div className="flex gap-2">
                 <input
                   ref={inputRef}

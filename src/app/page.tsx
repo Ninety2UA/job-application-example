@@ -6,7 +6,7 @@ import EmbeddedChat from "@/components/layout/EmbeddedChat";
 
 export default function Home() {
   return (
-    <main>
+    <>
       {/* Hero */}
       <section className="flex min-h-[calc(100vh-5rem)] items-center justify-center px-6">
         <div className="mx-auto max-w-3xl text-center">
@@ -119,6 +119,6 @@ export default function Home() {
           </p>
         </motion.div>
       </section>
-    </main>
+    </>
   );
 }
