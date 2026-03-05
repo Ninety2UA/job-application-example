@@ -44,7 +44,7 @@ export default function FloatingNav() {
           {/* Mobile hamburger */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="flex flex-col gap-1 md:hidden"
+            className="flex h-11 w-11 flex-col items-center justify-center gap-1 md:hidden"
             aria-label={isOpen ? "Close menu" : "Open menu"}
           >
             <motion.span

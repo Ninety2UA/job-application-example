@@ -22,6 +22,7 @@ export default function ExpandableSection({
     <div className="rounded-2xl border border-card-border bg-card overflow-hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
+        aria-expanded={isOpen}
         className="flex w-full items-center justify-between p-6 text-left transition-colors hover:bg-card-border/20"
       >
         <div>

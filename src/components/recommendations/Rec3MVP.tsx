@@ -54,7 +54,7 @@ export default function Rec3MVP() {
   const [selectedSegment, setSelectedSegment] = useState("scaling");
   const [completedSteps, setCompletedSteps] = useState<Set<number>>(new Set([0, 1]));
 
-  const segment = segments.find((s) => s.id === selectedSegment)!;
+  const segment = segments.find((s) => s.id === selectedSegment) ?? segments[1];
   const progress = (completedSteps.size / segment.steps.length) * 100;
 
   const toggleStep = (idx: number) => {
@@ -68,7 +68,7 @@ export default function Rec3MVP() {
 
   const handleSegmentChange = (id: string) => {
     setSelectedSegment(id);
-    const seg = segments.find((s) => s.id === id)!;
+    const seg = segments.find((s) => s.id === id) ?? segments[1];
     const defaults = new Set<number>();
     seg.steps.forEach((s, i) => { if (s.done) defaults.add(i); });
     setCompletedSteps(defaults);

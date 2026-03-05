@@ -98,6 +98,7 @@ export default function AboutPage() {
             <button
               key={role.id}
               onClick={() => setActiveRole(activeRole === role.id ? null : role.id)}
+              aria-pressed={activeRole === role.id}
               className={`rounded-full border px-4 py-2 text-sm font-medium transition-all ${
                 activeRole === role.id
                   ? "border-accent bg-accent text-background"

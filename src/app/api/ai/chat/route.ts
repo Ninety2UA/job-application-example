@@ -38,7 +38,21 @@ export async function POST(request: Request) {
     }
 
     const message = body.message.trim().slice(0, 500);
-    const history = Array.isArray(body.history) ? body.history.slice(-10) : [];
+    const history = Array.isArray(body.history)
+      ? body.history
+          .slice(-10)
+          .filter(
+            (msg: unknown): msg is { role: string; text: string } =>
+              typeof msg === "object" &&
+              msg !== null &&
+              typeof (msg as { role?: unknown }).role === "string" &&
+              typeof (msg as { text?: unknown }).text === "string"
+          )
+          .map((msg: { role: string; text: string }) => ({
+            role: msg.role,
+            text: msg.text.slice(0, 500),
+          }))
+      : [];
 
     const contents = [
       ...history.map((msg: { role: string; text: string }) => ({
