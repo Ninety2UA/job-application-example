@@ -9,7 +9,7 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/analysis", label: "Analysis" },
   { href: "/prototypes", label: "Prototypes" },
-  { href: "/about", label: "About" },
+  { href: "/about", label: "Why KLAR + Dominik" },
 ];
 
 export default function FloatingNav() {

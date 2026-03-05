@@ -91,6 +91,27 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Why KLAR + Dominik CTA */}
+      <section className="px-6 pb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.4 }}
+          className="mx-auto max-w-2xl text-center"
+        >
+          <Link
+            href="/about"
+            className="inline-flex items-center gap-2 rounded-full border border-accent/20 bg-accent/10 px-8 py-3.5 text-sm font-medium text-accent transition-colors hover:bg-accent/20"
+          >
+            Why KLAR + Dominik
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </Link>
+        </motion.div>
+      </section>
+
       {/* Embedded Chat */}
       <section className="px-6 pb-24">
         <motion.div
