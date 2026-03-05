@@ -28,14 +28,12 @@ export const metadata: Metadata = {
     description: "I didn't write a cover letter. I built this instead.",
     url: "https://klar.dbenger.com",
     siteName: "Dominik Benger x KLAR",
-    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Dominik Benger x KLAR",
     description: "I didn't write a cover letter. I built this instead.",
-    images: ["/og-image.png"],
   },
 };
 
