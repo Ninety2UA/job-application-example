@@ -40,7 +40,7 @@ export default function ChatProvider({ children }: { children: ReactNode }) {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             message: text,
-            history: [...messages, userMsg].slice(-10),
+            history: messages.slice(-10),
           }),
         });
         const data = await res.json();

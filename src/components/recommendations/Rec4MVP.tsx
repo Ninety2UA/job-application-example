@@ -78,7 +78,7 @@ export default function Rec4MVP() {
   });
 
   const topPerformer = selectedChannels.length > 0
-    ? creativeData[selectedChannels[0]]
+    ? [...creativeData[selectedChannels[0]]]
         .sort((a, b) => b.roas - a.roas)[0]
     : null;
 
