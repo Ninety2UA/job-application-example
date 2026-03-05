@@ -65,30 +65,63 @@ export default function AboutPage() {
         </p>
       </motion.div>
 
-      {/* Proof Points */}
+      {/* Core Capabilities */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.15 }}
         className="mb-12"
       >
-        <h2 className="mb-4 text-sm font-semibold uppercase tracking-widest text-accent">
-          Proof Points from Google
+        <h2 className="mb-6 text-sm font-semibold uppercase tracking-widest text-accent">
+          Core Capabilities
         </h2>
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <div className="space-y-4">
           {[
-            { value: "$XXXmm+", label: "Quarterly Managed Revenue" },
-            { value: "40%", label: "Avg. YoY Revenue Growth" },
-            { value: "3,000+", label: "Daily Dashboard Users" },
-            { value: "100%", label: "Client Satisfaction Rate" },
-            { value: "1,500+", label: "Clients via Growth Program" },
-            { value: "157%", label: "Of Quarterly Sales Target" },
-            { value: "300%", label: "YoY Ad Spend Growth" },
-            { value: "~8 yrs", label: "At Google" },
-          ].map((stat) => (
-            <div key={stat.label} className="rounded-xl border border-card-border bg-card p-4">
-              <p className="text-xl font-bold text-accent">{stat.value}</p>
-              <p className="mt-1 text-xs text-muted">{stat.label}</p>
+            {
+              icon: (
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 13h2v8H3zm6-4h2v12H9zm6-3h2v15h-2zm6-3h2v18h-2z" />
+                </svg>
+              ),
+              title: "Performance Analytics & Data Warehousing",
+              description: "End-to-end analytics infrastructure — from KPI scorecards and cohort/LTV modeling in BigQuery to automated reporting pipelines and executive dashboards that turn raw campaign, revenue, and server data into clear, actionable performance insights.",
+            },
+            {
+              icon: (
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              ),
+              title: "Performance Automation & AI Integration",
+              description: "Integrating Gemini, Claude, and Python workflows to automatically surface narrative insights from raw data, automate mundane weekly reporting, and drastically reduce the time-to-insight for your growth teams.",
+            },
+            {
+              icon: (
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              ),
+              title: "Growth Strategy & Optimization",
+              description: "Deploying rigorous A/B testing frameworks, LTV/cohort modeling, and direct campaign optimizations to drive efficiency, scale across global markets, and unlock incremental revenue opportunities.",
+            },
+            {
+              icon: (
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              ),
+              title: "Attribution & Measurement Frameworks",
+              description: "Deep expertise in multi-touch attribution, SKAdNetwork, MMM, and incrementality testing — built measurement frameworks at Google that navigated iOS privacy changes and delivered reliable cross-channel performance insights at scale.",
+            },
+          ].map((cap) => (
+            <div key={cap.title} className="flex gap-4 rounded-2xl border border-card-border bg-card p-5 sm:p-6">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent">
+                {cap.icon}
+              </div>
+              <div>
+                <h3 className="font-semibold text-foreground">{cap.title}</h3>
+                <p className="mt-1.5 text-sm leading-relaxed text-muted">{cap.description}</p>
+              </div>
             </div>
           ))}
         </div>
