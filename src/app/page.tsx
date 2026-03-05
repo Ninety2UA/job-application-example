@@ -55,7 +55,7 @@ export default function Home() {
             </Link>
             <Link
               href="/prototypes"
-              className="inline-flex items-center gap-2 rounded-full border border-card-border px-8 py-3.5 text-sm font-medium text-muted transition-colors hover:border-accent/30 hover:text-foreground"
+              className="inline-flex items-center gap-2 rounded-full bg-accent/15 px-8 py-3.5 text-sm font-medium text-accent transition-colors hover:bg-accent/25"
             >
               View Prototypes
             </Link>
