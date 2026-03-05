@@ -1,7 +1,7 @@
 # KLAR Interactive Job Application — Dominik Benger
 
 ## Project Overview
-Interactive Next.js web app serving as Dominik Benger's job application to KLAR (getklar.com) — the eCom Data Operating System. Not a cover letter: a working prototype demonstrating deep business research, strategic thinking, and technical capability. Deployed to Vercel at `klar.dbenger.com`.
+Interactive Next.js web app serving as Dominik Benger's job application to KLAR (getklar.com) — the eCom Data Operating System. Not a cover letter: a working prototype demonstrating deep business research, strategic thinking, and technical capability. Deployed to Vercel at `dbenger-job-application-klar.vercel.app`.
 
 ## Startup Ritual
 **At the start of every new session, before taking any action, you MUST:**
@@ -239,7 +239,7 @@ The sibling project at `/Users/dbenger/projects/web-app-resume/` is the canonica
 ### Deployment
 - **OG image is critical.** The social preview when shared via WhatsApp/Slack is the literal first impression. Must show "Dominik Benger × KLAR" with KLAR-aligned design. Size: 1200×630px.
 - **Vercel auto-deploy** from GitHub push. If it doesn't trigger: `npx vercel --prod`.
-- **Target domain:** `klar.dbenger.com` (subdomain of existing portfolio).
+- **Target domain:** `dbenger-job-application-klar.vercel.app` (Vercel subdomain).
 
 ## Build Phases
 1. **Phase 0:** Project scaffolding (Next.js + Tailwind + fonts + git init + CLAUDE.md)
@@ -280,7 +280,7 @@ Each of the 5 recommendation MVPs must have:
 - https://getklar.com/blog
 - https://www.ecom-unity.eu/ (eCom Unity community)
 - https://ecomunity.beehiiv.com/ (newsletter)
-- LinkedIn: Max Rast (CEO), Cillier Roux (CTO), Frank Roux (CTO)
+- LinkedIn: Max Rast (CEO), Cillie Burger (CTO), Frank Birzle (CTO)
 - Competitors: Triple Whale, Northbeam, Rockerbox, Polar Analytics, Lifetimely, Peel Insights
 - Job descriptions: 4 URLs on getklar.getoutline.com (see `docs/prompt/klar-application-claude-code-prompt_new.md`)
 
@@ -294,8 +294,8 @@ Each of the 5 recommendation MVPs must have:
 Always read `docs/STATUS.md` and `docs/tasks.md` before starting any work.
 
 ## Session Continuity
-- **Latest work:** Planning phase complete. Created CLAUDE.md, docs/STATUS.md, docs/tasks.md, .claude/commands/session-wrap.md, implementation plan, brainstorm. No source code yet.
-- **Current phase:** Phase 0 (Project Scaffolding) — not yet started
-- **Next steps:** Initialize Next.js project, git init, install deps, configure Tailwind dark mode, set up fonts, create `.env.local`
-- **Uncommitted:** All planning files created but git not yet initialized
-- **Deployed:** Not deployed
+- **Latest work:** Full app built, reviewed, tested, and deployed. 7 commits on `main`. All 8 pages, 5 MVPs, chat widget, OG image, 404 complete. Code review findings fixed (sort mutation, chat duplication, a11y, security). 4 research agents completed with rich KLAR data.
+- **Current phase:** Phase 7 complete — deployed to production
+- **Next steps:** Lighthouse performance audit; enhance content with research findings (corrected founders, richer competitor data, deeper analysis); consider server-rendering pages for LCP
+- **Uncommitted:** None
+- **Deployed:** https://dbenger-job-application-klar.vercel.app (Vercel, GEMINI_API_KEY configured)
