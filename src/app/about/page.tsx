@@ -77,14 +77,14 @@ export default function AboutPage() {
         </h2>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
           {[
-            { value: "$XXXmm+", label: "Quarterly Revenue" },
-            { value: "40%", label: "Avg. YoY Growth" },
+            { value: "~8 yrs", label: "At Google" },
             { value: "3,000+", label: "BI Platform Users" },
-            { value: "100%", label: "Client Satisfaction" },
-            { value: "25+", label: "Clients Managed" },
             { value: "1,500+", label: "Clients Scaled" },
+            { value: "100%", label: "Client Satisfaction" },
+            { value: "157%", label: "Quota Attainment" },
             { value: "300%", label: "YoY Investment Growth" },
-            { value: "55%", label: "Market Export Growth" },
+            { value: "50+", label: "Reps Trained" },
+            { value: "10", label: "Prototypes Built" },
           ].map((stat) => (
             <div key={stat.label} className="rounded-xl border border-card-border bg-card p-4">
               <p className="text-xl font-bold text-accent">{stat.value}</p>
