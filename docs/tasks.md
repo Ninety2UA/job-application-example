@@ -113,7 +113,28 @@
 | T76 | Update landing page stats (5→10 recommendations/MVPs) | Done |
 | T77 | Expand klar-knowledge.ts with 10 recommendations + PO role details | Done |
 | T78 | Update ChatWidget suggested questions for measurement topics | Done |
-| T79 | Commit and deploy session 4 changes | Pending |
+| T79 | Commit and deploy session 4 changes | Done |
+
+## Homepage Enhancements (Session 5)
+| Task | Description | Status |
+|------|-------------|--------|
+| T86 | Create EmbeddedChat component (inline chat on homepage, shared ChatProvider context) | Done |
+| T87 | Add Download Resume PDF button to homepage hero CTAs | Done |
+| T88 | Hide floating chat FAB on homepage (embedded chat replaces it) | Done |
+| T89 | Fix mobile chat panel clipping — use inset-0 instead of bottom-0/right-0/h-full/w-full | Done |
+| T90 | Add iOS safe area support — viewport-fit:cover + safe-area-inset-bottom padding | Done |
+| T91 | Fix nested `<main>` tags on homepage (layout already wraps in `<main>`) | Done |
+
+## Naming & UX Polish (Session 6)
+| Task | Description | Status |
+|------|-------------|--------|
+| T92 | Rename "Recommendations" → "Prototypes" site-wide (routes, types, nav, UI, metadata, OG image) | Done |
+| T93 | Fix homepage scroll-to-bottom on load (guard scrollIntoView with messages.length > 0) | Done |
+| T94 | Make "View Prototypes" button lighter green variant (bg-accent/15) | Done |
+| T95 | Rename nav "About" → "Why KLAR + Dominik" + add homepage CTA button below stats | Done |
+| T96 | Add Download Resume button to about page header (right-aligned, green, hidden on mobile) | Done |
+| T97 | Replace proof point stats grid with Core Capabilities cards (4 icon+title+description cards) | Done |
+| T98 | Update OG image stats (10 Prototypes, 10 Working Demos, 4 Target Roles) | Done |
 
 ## Design Overhaul (from /ui-ux-pro-max)
 | Task | Description | Status |

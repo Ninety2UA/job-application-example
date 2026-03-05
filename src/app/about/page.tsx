@@ -72,9 +72,12 @@ export default function AboutPage() {
         transition={{ delay: 0.15 }}
         className="mb-12"
       >
-        <h2 className="mb-6 text-sm font-semibold uppercase tracking-widest text-accent">
-          Core Capabilities
+        <h2 className="mb-2 text-sm font-semibold uppercase tracking-widest text-accent">
+          What I Bring to KLAR
         </h2>
+        <p className="mb-6 text-sm text-muted">
+          Capabilities shaped by nearly 8 years at Google — now pointed at the problems KLAR is solving.
+        </p>
         <div className="space-y-4">
           {[
             {
@@ -83,26 +86,8 @@ export default function AboutPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 13h2v8H3zm6-4h2v12H9zm6-3h2v15h-2zm6-3h2v18h-2z" />
                 </svg>
               ),
-              title: "Performance Analytics & Data Warehousing",
-              description: "End-to-end analytics infrastructure — from KPI scorecards and cohort/LTV modeling in BigQuery to automated reporting pipelines and executive dashboards that turn raw campaign, revenue, and server data into clear, actionable performance insights.",
-            },
-            {
-              icon: (
-                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              ),
-              title: "Performance Automation & AI Integration",
-              description: "Integrating Gemini, Claude, and Python workflows to automatically surface narrative insights from raw data, automate mundane weekly reporting, and drastically reduce the time-to-insight for your growth teams.",
-            },
-            {
-              icon: (
-                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              ),
-              title: "Growth Strategy & Optimization",
-              description: "Deploying rigorous A/B testing frameworks, LTV/cohort modeling, and direct campaign optimizations to drive efficiency, scale across global markets, and unlock incremental revenue opportunities.",
+              title: "The Analytics Infrastructure KLAR Customers Need",
+              description: "I built KPI scorecards, cohort/LTV models, and executive dashboards in BigQuery for 25+ advertisers — the same kind of reporting pipelines that power KLAR's Data Operating System. I know what actionable analytics looks like from the operator's seat.",
             },
             {
               icon: (
@@ -110,8 +95,26 @@ export default function AboutPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               ),
-              title: "Attribution & Measurement Frameworks",
-              description: "Deep expertise in multi-touch attribution, SKAdNetwork, MMM, and incrementality testing — built measurement frameworks at Google that navigated iOS privacy changes and delivered reliable cross-channel performance insights at scale.",
+              title: "Attribution Expertise for a Post-Privacy World",
+              description: "At Google, I navigated the iOS 14.5 upheaval firsthand — building SKAdNetwork reporting, designing measurement frameworks that blended MTA with incrementality testing. KLAR's attribution product is solving this exact problem for eCom, and I've lived the technical complexity behind it.",
+            },
+            {
+              icon: (
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              ),
+              title: "AI-Powered Insights at the Speed eCom Demands",
+              description: "I've integrated Gemini and Claude into analytics workflows to surface narrative insights from raw data automatically — the kind of automation that turns KLAR's dashboards from something brands check into something that tells them what to do next.",
+            },
+            {
+              icon: (
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              ),
+              title: "Growth That Scales — From Playbooks to Pipeline",
+              description: "I designed GTM playbooks that scaled to 1,500+ clients with 300% YoY investment growth. KLAR's eCom Unity community is a distribution moat no competitor can replicate — I know how to turn community engagement into product adoption and revenue.",
             },
           ].map((cap) => (
             <div key={cap.title} className="flex gap-4 rounded-2xl border border-card-border bg-card p-5 sm:p-6">

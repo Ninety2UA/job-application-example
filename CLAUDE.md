@@ -52,24 +52,23 @@ src/
 │   ├── globals.css             # Global styles, dark mode base, accessibility
 │   ├── analysis/
 │   │   └── page.tsx            # KLAR Business Model & Market Analysis
-│   ├── recommendations/
-│   │   ├── page.tsx            # Overview card grid (all 5 recommendations)
+│   ├── prototypes/
+│   │   ├── page.tsx            # Overview card grid (all 10 prototypes)
 │   │   └── [id]/
-│   │       └── page.tsx        # Individual recommendation + interactive MVP
+│   │       └── page.tsx        # Individual prototype + interactive MVP
 │   ├── about/
-│   │   └── page.tsx            # Why KLAR + Dominik (lean, links to dbenger.com)
+│   │   └── page.tsx            # Why KLAR + Dominik (capabilities, skills matrix, CTA)
 │   ├── not-found.tsx           # Custom 404 page
 │   └── api/ai/
-│       ├── klar-knowledge.ts   # Shared knowledge base (resume + KLAR context + recommendations)
+│       ├── klar-knowledge.ts   # Shared knowledge base (resume + KLAR context + prototypes)
 │       └── chat/
 │           └── route.ts        # POST — Gemini Flash chat proxy (force-dynamic)
 ├── components/
-│   ├── layout/                 # FloatingNav, Footer, ChatWidget, ChatProvider
-│   ├── sections/               # HeroSection, AnalysisSection, etc.
-│   ├── recommendations/        # Rec1MVP, Rec2MVP, Rec3MVP, Rec4MVP, Rec5MVP
+│   ├── layout/                 # FloatingNav, Footer, ChatWidget, ChatProvider, EmbeddedChat
+│   ├── prototypes/             # PrototypeContent, Rec1MVP–Rec10MVP
 │   └── ui/                     # Card, Button, Badge, ExpandableSection
 ├── data/
-│   ├── recommendations.ts      # Typed recommendation data (5 entries with metadata)
+│   ├── prototypes.ts           # Typed prototype data (10 entries with metadata)
 │   ├── analysis.ts             # KLAR business analysis structured data
 │   └── skills-roles.ts         # Skills-to-roles mapping for /about page
 └── lib/
@@ -100,21 +99,18 @@ docs/
 ```
 / (Landing / Hero)
 ├── /analysis              → KLAR Business Model & Market Analysis (5 sections)
-├── /recommendations       → Card grid overview of all 5 strategies
-│   ├── /recommendations/1 → Recommendation + interactive MVP #1
-│   ├── /recommendations/2 → Recommendation + interactive MVP #2
-│   ├── /recommendations/3 → Recommendation + interactive MVP #3
-│   ├── /recommendations/4 → Recommendation + interactive MVP #4
-│   └── /recommendations/5 → Recommendation + interactive MVP #5
-├── /about                 → Why KLAR + Dominik (skills matrix, CTA, proof points)
+├── /prototypes            → Card grid overview of all 10 prototypes
+│   ├── /prototypes/1–5    → Cross-Role Strategy prototypes + interactive MVPs
+│   └── /prototypes/6–10   → PO Marketing Measurement prototypes + interactive MVPs
+├── /about                 → Why KLAR + Dominik (capabilities, skills matrix, CTA)
 └── [AI Chat Widget]       → Persistent floating overlay (Gemini Flash)
 ```
 
 **Navigation pattern:**
 - **Mobile:** Sticky header with hamburger menu
-- **Desktop:** Full horizontal nav with links: Analysis, Recommendations, About
-- **Recommendation pages:** Previous/Next buttons at bottom for sequential flow
-- **Deep links:** Every page must be self-orienting (visitor landing on `/recommendations/3` should understand context)
+- **Desktop:** Full horizontal nav with links: Analysis, Prototypes, Why KLAR + Dominik
+- **Prototype pages:** Previous/Next buttons at bottom for sequential flow
+- **Deep links:** Every page must be self-orienting (visitor landing on `/prototypes/3` should understand context)
 
 ## Design System
 
@@ -268,7 +264,7 @@ The co-founder should think:
 - Build: 0 warnings, static pages SSG'd, only chat route dynamic
 
 ## MVP Interactivity Standard
-Each of the 5 recommendation MVPs must have:
+Each of the 10 recommendation MVPs must have:
 - Synthetic/hardcoded data (no external API dependencies)
 - At least one user-manipulable input (dropdown, slider, toggle, date range)
 - Recharts visualization(s) that update reactively based on user input
@@ -294,8 +290,8 @@ Each of the 5 recommendation MVPs must have:
 Always read `docs/STATUS.md` and `docs/tasks.md` before starting any work.
 
 ## Session Continuity
-- **Latest work:** Added 5 new PO Marketing Measurement MVPs (Rec 6-10): Attribution Model Comparator, Channel Saturation Curves, Incrementality Test Planner, Privacy Signal Loss Simulator, Unified Measurement Framework. Recommendations page restructured into two sections. Knowledge base updated with all 10 recs + corrected KLAR data. Minor design polish (card colors, glow effects, scrollbar). Deep research on KLAR measurement product and MTA/MMM/incrementality landscape.
-- **Current phase:** Phase 7+ — new MVPs built, not yet committed or deployed
-- **Next steps:** Commit and deploy new MVPs; significant design overhaul (ui-ux-pro-max barely applied); Lighthouse audit (T48); content enhancement for analysis page (T63); responsive testing of new MVPs
-- **Uncommitted:** 8 modified files + 5 new Rec{6-10}MVP.tsx components (236 insertions, build passes)
-- **Deployed:** https://dbenger-job-application-klar.vercel.app (Vercel) — still shows old 5-MVP version
+- **Latest work (session 6):** Renamed "Recommendations" → "Prototypes" site-wide (routes, types, nav, UI text, metadata, OG image). Renamed nav "About" → "Why KLAR + Dominik" with homepage CTA. Added Download Resume button to about page. Replaced proof point stats with Core Capabilities cards. Fixed homepage scroll-to-bottom bug. Made View Prototypes button green.
+- **Current phase:** Phase 7+ complete — all features deployed, polish/design overhaul pending
+- **Next steps:** Design overhaul (T80-T85); Lighthouse audit (T48); content enhancement (T63); responsive testing of prototypes 6-10
+- **Uncommitted:** None (only untracked .playwright-mcp/ and screenshots/ dirs)
+- **Deployed:** https://dbenger-job-application-klar.vercel.app — fully up to date (commit b3333b6)
