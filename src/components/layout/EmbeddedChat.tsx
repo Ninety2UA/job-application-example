@@ -37,9 +37,9 @@ export default function EmbeddedChat() {
   };
 
   return (
-    <div className="flex flex-col rounded-2xl border border-card-border bg-card overflow-hidden">
+    <div className="flex flex-col rounded-2xl border border-emerald-800/40 bg-emerald-950/20 overflow-hidden">
       {/* Header */}
-      <div className="border-b border-card-border px-5 py-4">
+      <div className="border-b border-emerald-800/30 px-5 py-4">
         <div className="flex items-center gap-2">
           <span className="flex h-2 w-2 rounded-full bg-accent animate-pulse" />
           <p className="text-sm font-semibold">Ask me anything</p>
@@ -50,7 +50,7 @@ export default function EmbeddedChat() {
       </div>
 
       {/* Messages */}
-      <div className="flex-1 overflow-y-auto p-4 space-y-3 min-h-[200px] max-h-[320px]">
+      <div className="flex-1 overflow-y-auto p-5 space-y-3 min-h-[260px] max-h-[400px]">
         {messages.length === 0 && (
           <div className="space-y-3">
             <p className="text-sm text-muted">
@@ -101,7 +101,7 @@ export default function EmbeddedChat() {
       </div>
 
       {/* Input */}
-      <form onSubmit={handleSubmit} className="border-t border-card-border p-3">
+      <form onSubmit={handleSubmit} className="border-t border-emerald-800/30 p-4">
         <div className="flex gap-2">
           <input
             ref={inputRef}

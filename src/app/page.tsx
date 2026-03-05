@@ -109,13 +109,13 @@ export default function Home() {
       </section>
 
       {/* Embedded Chat */}
-      <section className="px-6 pb-24">
+      <section className="mt-[-2rem] px-6 pb-24">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
-          className="mx-auto max-w-2xl"
+          className="mx-auto max-w-3xl"
         >
           <p className="mb-4 text-center text-sm font-medium uppercase tracking-widest text-accent">
             Have Questions?
