@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/next";
+import FloatingNav from "@/components/layout/FloatingNav";
+import Footer from "@/components/layout/Footer";
+import ChatProvider from "@/components/layout/ChatProvider";
+import ChatWidget from "@/components/layout/ChatWidget";
 import "./globals.css";
 
 const satoshi = localFont({
@@ -21,8 +25,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://klar.dbenger.com"),
   openGraph: {
     title: "Dominik Benger x KLAR",
-    description:
-      "I didn't write a cover letter. I built this instead.",
+    description: "I didn't write a cover letter. I built this instead.",
     url: "https://klar.dbenger.com",
     siteName: "Dominik Benger x KLAR",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
@@ -31,8 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Dominik Benger x KLAR",
-    description:
-      "I didn't write a cover letter. I built this instead.",
+    description: "I didn't write a cover letter. I built this instead.",
     images: ["/og-image.png"],
   },
 };
@@ -45,7 +47,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={satoshi.variable}>
       <body className="antialiased">
-        {children}
+        <ChatProvider>
+          <FloatingNav />
+          <main className="min-h-screen pt-20">{children}</main>
+          <Footer />
+          <ChatWidget />
+        </ChatProvider>
         <Analytics />
       </body>
     </html>
