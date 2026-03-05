@@ -1,60 +1,40 @@
 # Project Status
 
 ## What we're building
-- Interactive job application web app for KLAR (getklar.com) — Next.js 15 App Router, TypeScript, Tailwind CSS, Recharts, Gemini Flash AI chatbot
-- 6 pages: Landing, Analysis, Recommendations (overview + 5 individual), About
+- Interactive job application web app for KLAR (getklar.com) — Next.js 16 App Router, TypeScript, Tailwind CSS v4, Recharts, Gemini Flash AI chatbot
+- 8 pages: Landing, Analysis, Recommendations (overview + 5 individual), About, 404
 - 5 interactive MVP prototypes demonstrating strategic recommendations
 - AI chatbot with KLAR-specific knowledge base
-- Dark mode, KLAR-aligned design (emerald/green accents)
+- Dark mode, KLAR-aligned design (emerald/green accents, Satoshi font)
 - Deploy to Vercel at `klar.dbenger.com`
 
 ## What's done
 | Commit | Scope |
 |--------|-------|
-| (not yet initialized) | Project planning complete — brainstorm, plan, CLAUDE.md, STATUS.md, tasks.md, session-wrap command |
+| 1a90451 | Phase 0: Scaffolded Next.js 16 + Tailwind v4 + Satoshi fonts + dark mode palette |
+| 3cc6a6e | Phases 2-6: All pages, components, MVPs, chat widget, knowledge base |
+| a9e34a3 | Phase 7: OG image generation, SVG favicon, metadata polish |
 
 ## Current state
-- **Git:** Not yet initialized
-- **Code:** No source code yet — project is in planning phase
-- **Build:** N/A (no `package.json` yet)
-- **Deployment:** Not deployed
+- **Git:** Initialized on `main` branch, 3 commits
+- **Build:** Passes cleanly (`npm run build`)
+- **Code:** All pages and components implemented
+- **Deployment:** Not deployed yet (needs GitHub push + Vercel setup)
 
-### Files that exist
+### Route Map
 ```
-CLAUDE.md                                          # Project instructions & conventions
-.claude/commands/session-wrap.md                   # Session wrap-up slash command
-docs/
-├── brainstorms/
-│   └── 2026-03-05-klar-application-brainstorm.md  # Key decisions & rationale
-├── plans/
-│   └── 2026-03-05-feat-klar-interactive-job-application-plan.md  # Implementation plan
-├── prompt/
-│   └── klar-application-claude-code-prompt_new.md # Full project specification
-├── resume/
-│   └── Dominik Benger - Resume [V3].pdf           # Source resume
-├── STATUS.md                                      # This file
-└── tasks.md                                       # Task tracker
+○ /                     → Landing page (hero, CTA, stats)
+○ /analysis             → 5-section business analysis (expandable, competitive table)
+○ /recommendations      → Card grid overview of 5 recommendations
+● /recommendations/[1-5] → Individual recommendation + interactive MVP
+○ /about                → Skills matrix, proof points, "Let's Talk" CTA
+○ /_not-found           → Custom 404
+ƒ /api/ai/chat          → Gemini Flash chat proxy (force-dynamic)
+ƒ /opengraph-image      → Edge-generated OG image (1200x630)
 ```
-
-## Decisions made
-| Area | Decision |
-|------|----------|
-| Architecture | Next.js 15 App Router with React components (NOT static HTML like dbenger.com) |
-| Styling | Tailwind CSS (npm-installed), dark mode default, emerald/green accents |
-| Charts | Recharts for MVP data visualizations |
-| Animations | Framer Motion (subtle entrance animations, scroll-triggered reveals) |
-| AI | Gemini Flash via server-side API route (reuse pattern from dbenger.com) |
-| Fonts | Satoshi/General Sans/Cabinet Grotesk (self-hosted, NOT Google Fonts) |
-| Language | English throughout |
-| Deployment | Vercel, target domain `klar.dbenger.com` |
-| Design | KLAR-aligned dark mode, sibling to dbenger.com but distinct identity |
-| Rendering | force-static for all pages, force-dynamic for AI chat route only |
 
 ## What's next
-- **Phase 0:** Project scaffolding — `npx create-next-app`, git init, Tailwind config, font setup, `.env.local`
-- **Phase 1:** KLAR deep research — fetch and analyze getklar.com, blog, competitors, job descriptions, founders
-- Then: Landing page, Analysis, 5 Recommendations with MVPs, About, AI Chat, Polish & Deploy
-
-## Reference project
-- dbenger.com codebase at `/Users/dbenger/projects/web-app-resume/` — proven patterns for Gemini API, Tailwind config, Vercel deployment
-- Gemini API key exists in that project's `.env.local` — reuse for this project
+- **Deploy to Vercel:** Push to GitHub, configure `klar.dbenger.com` subdomain
+- **Mobile testing:** Test on iPhone Safari, Android Chrome
+- **Performance audit:** Lighthouse score, bundle size check
+- **Content refinement:** Incorporate research agent findings into analysis data if needed
