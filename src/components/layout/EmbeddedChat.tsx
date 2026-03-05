@@ -53,7 +53,7 @@ export default function EmbeddedChat() {
           <div className="space-y-3">
             <p className="text-sm text-muted">
               Hi! I can answer questions about Dominik&apos;s background, the
-              KLAR analysis, and these recommendations. Try one:
+              KLAR analysis, and these prototypes. Try one:
             </p>
             <div className="flex flex-wrap gap-2">
               {suggestedQuestions.map((q) => (

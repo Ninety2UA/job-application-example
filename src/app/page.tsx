@@ -35,7 +35,7 @@ export default function Home() {
             transition={{ delay: 0.35 }}
             className="mx-auto mt-6 max-w-xl text-lg text-muted"
           >
-            Deep business research, 10 strategic recommendations with working prototypes,
+            Deep business research, 10 strategic prototypes with working demos,
             and an AI assistant — all built for KLAR.
           </motion.p>
           <motion.div
@@ -54,10 +54,10 @@ export default function Home() {
               </svg>
             </Link>
             <Link
-              href="/recommendations"
+              href="/prototypes"
               className="inline-flex items-center gap-2 rounded-full border border-card-border px-8 py-3.5 text-sm font-medium text-muted transition-colors hover:border-accent/30 hover:text-foreground"
             >
-              View Recommendations
+              View Prototypes
             </Link>
             <a
               href="/resume/dominik-benger-resume.pdf"
@@ -78,7 +78,7 @@ export default function Home() {
             className="mt-16 grid grid-cols-3 gap-6 text-center"
           >
             {[
-              { value: "10", label: "Strategic Recommendations" },
+              { value: "10", label: "Strategic Prototypes" },
               { value: "10", label: "Working MVP Prototypes" },
               { value: "4", label: "Target Roles" },
             ].map((stat) => (

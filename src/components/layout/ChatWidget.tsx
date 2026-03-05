@@ -16,9 +16,9 @@ const suggestedQuestions: Record<string, string[]> = {
     "How does KLAR compare to Triple Whale?",
     "What growth opportunities did Dominik find?",
   ],
-  "/recommendations": [
-    "Which recommendation is strongest?",
-    "Tell me about the PO Marketing Measurement MVPs",
+  "/prototypes": [
+    "Which prototype is strongest?",
+    "Tell me about the PO Marketing Measurement prototypes",
     "How does the unified measurement framework work?",
   ],
   "/about": [
@@ -29,7 +29,7 @@ const suggestedQuestions: Record<string, string[]> = {
 };
 
 function getSuggestions(pathname: string): string[] {
-  if (pathname.startsWith("/recommendations/")) {
+  if (pathname.startsWith("/prototypes/")) {
     return [
       "How would this work in practice?",
       "What skills does Dominik bring here?",
@@ -121,7 +121,7 @@ export default function ChatWidget() {
                 <div className="space-y-3">
                   <p className="text-sm text-muted">
                     Hi! I can answer questions about Dominik&apos;s background, the KLAR analysis, and these
-                    recommendations. Try one of these:
+                    prototypes. Try one of these:
                   </p>
                   <div className="space-y-2">
                     {getSuggestions(pathname).map((q) => (

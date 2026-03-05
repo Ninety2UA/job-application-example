@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Badge from "@/components/ui/Badge";
-import { type Recommendation } from "@/data/recommendations";
+import { type Prototype } from "@/data/prototypes";
 import Rec1MVP from "./Rec1MVP";
 import Rec2MVP from "./Rec2MVP";
 import Rec3MVP from "./Rec3MVP";
@@ -28,14 +28,14 @@ const mvpComponents: Record<number, React.ComponentType> = {
   10: Rec10MVP,
 };
 
-export default function RecommendationContent({
+export default function PrototypeContent({
   rec,
   prev,
   next,
 }: {
-  rec: Recommendation;
-  prev?: Recommendation;
-  next?: Recommendation;
+  rec: Prototype;
+  prev?: Prototype;
+  next?: Prototype;
 }) {
   const MvpComponent = mvpComponents[rec.id];
 
@@ -43,13 +43,13 @@ export default function RecommendationContent({
     <section className="mx-auto max-w-4xl px-6 py-12">
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
         <Link
-          href="/recommendations"
+          href="/prototypes"
           className="mb-6 inline-flex items-center gap-1 text-sm text-muted hover:text-foreground transition-colors"
         >
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16l-4-4m0 0l4-4m-4 4h18" />
           </svg>
-          All Recommendations
+          All Prototypes
         </Link>
 
         <div className="flex items-center gap-3 mb-2">
@@ -155,7 +155,7 @@ export default function RecommendationContent({
       <div className="mt-12 flex items-center justify-between">
         {prev ? (
           <Link
-            href={`/recommendations/${prev.id}`}
+            href={`/prototypes/${prev.id}`}
             className="group flex items-center gap-2 text-sm text-muted hover:text-foreground transition-colors"
           >
             <svg className="h-4 w-4 transition-transform group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -168,7 +168,7 @@ export default function RecommendationContent({
         )}
         {next ? (
           <Link
-            href={`/recommendations/${next.id}`}
+            href={`/prototypes/${next.id}`}
             className="group flex items-center gap-2 text-sm text-muted hover:text-foreground transition-colors text-right"
           >
             {next.title}

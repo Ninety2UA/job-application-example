@@ -17,10 +17,10 @@ export default function NotFound() {
             Back to Home
           </Link>
           <Link
-            href="/recommendations"
+            href="/prototypes"
             className="rounded-full border border-card-border px-6 py-2.5 text-sm font-medium text-muted transition-colors hover:border-accent/30 hover:text-foreground"
           >
-            View Recommendations
+            View Prototypes
           </Link>
         </div>
       </div>

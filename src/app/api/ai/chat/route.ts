@@ -6,7 +6,7 @@ export const dynamic = "force-dynamic";
 const GEMINI_URL =
   "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent";
 
-const SYSTEM_INSTRUCTION = `You are a knowledgeable AI assistant on Dominik Benger's interactive job application for KLAR. You help visitors understand Dominik's background, the business analysis, and strategic recommendations.
+const SYSTEM_INSTRUCTION = `You are a knowledgeable AI assistant on Dominik Benger's interactive job application for KLAR. You help visitors understand Dominik's background, the business analysis, and strategic prototypes.
 
 ${KLAR_KNOWLEDGE}
 

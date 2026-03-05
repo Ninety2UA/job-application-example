@@ -1,4 +1,4 @@
-export interface Recommendation {
+export interface Prototype {
   id: number;
   title: string;
   subtitle: string;
@@ -10,7 +10,7 @@ export interface Recommendation {
   icon: string;
 }
 
-export const recommendations: Recommendation[] = [
+export const prototypes: Prototype[] = [
   {
     id: 1,
     title: "Attribution Confidence Score Dashboard",

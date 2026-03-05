@@ -56,7 +56,7 @@ export default function Image() {
               marginTop: "8px",
             }}
           >
-            Deep research. Strategic recommendations. Working prototypes.
+            Deep research. Strategic prototypes. Working demos.
           </div>
           <div
             style={{
@@ -67,9 +67,9 @@ export default function Image() {
               color: "#10b981",
             }}
           >
-            <span>5 Recommendations</span>
+            <span>10 Prototypes</span>
             <span style={{ color: "#52525b" }}>|</span>
-            <span>5 Interactive MVPs</span>
+            <span>10 Working Demos</span>
             <span style={{ color: "#52525b" }}>|</span>
             <span>4 Target Roles</span>
           </div>

@@ -27,7 +27,7 @@ export const viewport = {
 export const metadata: Metadata = {
   title: "Dominik Benger x KLAR",
   description:
-    "An interactive job application: deep business research, strategic recommendations, and working prototypes for KLAR — the eCom Data Operating System.",
+    "An interactive job application: deep business research, strategic prototypes, and working demos for KLAR — the eCom Data Operating System.",
   metadataBase: new URL("https://dbenger-job-application-klar.vercel.app"),
   openGraph: {
     title: "Dominik Benger x KLAR",

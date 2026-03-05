@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { recommendations } from "@/data/recommendations";
+import { prototypes } from "@/data/prototypes";
 import Badge from "@/components/ui/Badge";
 
-const generalRecs = recommendations.filter((r) => r.id <= 5);
-const measurementRecs = recommendations.filter((r) => r.id > 5);
+const generalRecs = prototypes.filter((r) => r.id <= 5);
+const measurementRecs = prototypes.filter((r) => r.id > 5);
 
-export default function RecommendationsPage() {
+export default function PrototypesPage() {
   return (
     <section className="mx-auto max-w-4xl px-6 py-12">
       <motion.div
@@ -17,18 +17,18 @@ export default function RecommendationsPage() {
         className="mb-12"
       >
         <p className="text-sm font-medium uppercase tracking-widest text-accent">
-          Strategic Recommendations
+          Strategic Prototypes
         </p>
         <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
           What I&apos;d Build at KLAR
         </h1>
         <p className="mt-4 max-w-2xl text-muted">
-          10 research-backed recommendations — each with a concrete proposal, skill mapping,
+          10 research-backed prototypes — each with a concrete proposal, skill mapping,
           and a working interactive prototype.
         </p>
       </motion.div>
 
-      {/* General Recommendations */}
+      {/* Cross-Role Prototypes */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -53,7 +53,7 @@ export default function RecommendationsPage() {
             transition={{ delay: i * 0.08 }}
           >
             <Link
-              href={`/recommendations/${rec.id}`}
+              href={`/prototypes/${rec.id}`}
               className="group block h-full cursor-pointer rounded-2xl border border-card-border bg-card p-6 transition-all hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5"
             >
               <div className="mb-3 flex items-center justify-between">
@@ -114,7 +114,7 @@ export default function RecommendationsPage() {
             transition={{ delay: 0.5 + i * 0.08 }}
           >
             <Link
-              href={`/recommendations/${rec.id}`}
+              href={`/prototypes/${rec.id}`}
               className="group block h-full cursor-pointer rounded-2xl border border-accent/10 bg-card p-6 transition-all hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5"
             >
               <div className="mb-3 flex items-center justify-between">
