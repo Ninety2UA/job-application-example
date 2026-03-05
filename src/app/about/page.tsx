@@ -19,7 +19,7 @@ export default function AboutPage() {
         animate={{ opacity: 1, y: 0 }}
         className="mb-12"
       >
-        <div className="flex items-start justify-between">
+        <div className="flex items-end justify-between">
           <div>
             <p className="text-sm font-medium uppercase tracking-widest text-accent">
               About
