@@ -22,11 +22,11 @@ export const metadata: Metadata = {
   title: "Dominik Benger x KLAR",
   description:
     "An interactive job application: deep business research, strategic recommendations, and working prototypes for KLAR — the eCom Data Operating System.",
-  metadataBase: new URL("https://klar.dbenger.com"),
+  metadataBase: new URL("https://dbenger-job-application-klar.vercel.app"),
   openGraph: {
     title: "Dominik Benger x KLAR",
     description: "I didn't write a cover letter. I built this instead.",
-    url: "https://klar.dbenger.com",
+    url: "https://dbenger-job-application-klar.vercel.app",
     siteName: "Dominik Benger x KLAR",
     type: "website",
   },

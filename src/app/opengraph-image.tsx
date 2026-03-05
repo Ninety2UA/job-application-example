@@ -82,7 +82,7 @@ export default function Image() {
             color: "#52525b",
           }}
         >
-          klar.dbenger.com
+          dbenger-job-application-klar.vercel.app
         </div>
       </div>
     ),
