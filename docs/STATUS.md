@@ -6,7 +6,8 @@
 - 10 interactive MVP prototypes (5 cross-role + 5 PO Marketing Measurement deep-dive)
 - AI chatbot with KLAR-specific knowledge base
 - Dark mode, KLAR-aligned design (emerald/green accents, Satoshi font)
-- Deployed to Vercel at `dbenger-job-application-klar.vercel.app`
+- Deployed to Vercel at `klar.dbenger.com`
+- Source on GitHub: `Ninety2UA/job-application-example`
 
 ## What's done
 | Commit | Scope |
@@ -36,15 +37,18 @@
 | 63dd52b | revert: restore original chat color scheme |
 | b5be6f8 | enhance all 10 MVP prototypes with multi-control UIs, secondary charts, data tables, and distinct bar colors |
 | 0fb58ab | add portfolio link button to about page header |
+| 86bfd5b | add README, LICENSE, screenshots, and publish to GitHub |
 
 ## Current state
-- **Git:** `main` branch, 27 commits, 1 uncommitted change (hero subtitle text)
+- **Git:** `main` branch, 28 commits, clean working tree, tracking `origin/main`
+- **GitHub:** https://github.com/Ninety2UA/job-application-example (public)
 - **Build:** Passes cleanly (`npm run build`)
 - **Code:** 10 advanced MVPs (enhanced with multi-control, secondary charts, tables, insights), embedded chat, "What I Bring to KLAR" cards, Download Resume, portfolio link
 - **Chatbot:** Gemini 3 Flash Preview, temp 0.7, enhanced system prompt with audience awareness
 - **Naming:** "Prototypes" site-wide; "Why KLAR + Dominik" nav
 - **Deployment:** Live at https://klar.dbenger.com (custom domain, old vercel.app alias removed)
 - **Vercel:** Deployment Protection disabled for public access
+- **README:** Comprehensive with screenshots, architecture, build guide, adaptation instructions
 
 ### Route Map
 ```
@@ -59,7 +63,6 @@
 ```
 
 ## What's next
-- **Commit hero subtitle:** Uncommitted text tweak in `src/app/page.tsx`
 - **Design overhaul:** Typography scale, card redesign, gradient accents, chart styling (T80-T85)
 - **Performance audit:** Lighthouse score, bundle size check (T48)
 - **Content enhancement:** Incorporate research findings into analysis page (T63)

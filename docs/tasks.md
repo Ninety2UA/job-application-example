@@ -174,6 +174,16 @@
 | T117 | Remove old vercel.app alias | Done |
 | T118 | Update hero subtitle wording ("prototype ideas with working mock-up demos") | Done |
 
+## Session 9: GitHub Publication
+| Task | Description | Status |
+|------|-------------|--------|
+| T119 | Create public GitHub repo `Ninety2UA/job-application-example` | Done |
+| T120 | Write comprehensive README.md (screenshots, architecture, build guide, adaptation) | Done |
+| T121 | Add MIT LICENSE | Done |
+| T122 | Take 6 fresh screenshots of live site with Playwright | Done |
+| T123 | Update .gitignore (exclude .playwright-mcp/, screenshots/) | Done |
+| T124 | Commit all pending changes and push full history to GitHub | Done |
+
 ## Future Improvements (from code review)
 | Task | Description | Status |
 |------|-------------|--------|

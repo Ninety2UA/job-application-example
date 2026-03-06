@@ -290,8 +290,9 @@ Each of the 10 recommendation MVPs must have:
 Always read `docs/STATUS.md` and `docs/tasks.md` before starting any work.
 
 ## Session Continuity
-- **Latest work (session 8):** Committed & deployed all 10 enhanced MVPs. Fixed Rec2MVP bar chart colors (emerald/indigo/amber). Added "Full Portfolio at dbenger.com" button to about page. Migrated domain from `dbenger-job-application-klar.vercel.app` → `klar.dbenger.com`. Updated hero subtitle wording.
-- **Current phase:** Phase 7+ — all features built and deployed
-- **Next steps:** Commit hero subtitle change; Design overhaul (T80-T85); Lighthouse audit (T48); content enhancement (T63)
-- **Uncommitted:** `src/app/page.tsx` — hero subtitle text tweak ("10 prototype ideas with working mock-up demos")
-- **Deployed:** https://klar.dbenger.com — up to date through commit 0fb58ab
+- **Latest work (session 9):** Published to GitHub as `Ninety2UA/job-application-example`. Created comprehensive README.md with screenshots, architecture diagram, step-by-step build guide, adaptation instructions. Added MIT LICENSE. Took 6 fresh screenshots with Playwright. Committed all pending changes from session 8.
+- **Current phase:** Phase 7+ — all features built, deployed, and published to GitHub
+- **Next steps:** Design overhaul (T80-T85); Lighthouse audit (T48); content enhancement (T63)
+- **Uncommitted:** None — clean working tree
+- **Deployed:** https://klar.dbenger.com — up to date through commit 86bfd5b
+- **GitHub:** https://github.com/Ninety2UA/job-application-example (public)
