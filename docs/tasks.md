@@ -83,7 +83,7 @@
 | T50 | Install Vercel Analytics | Done |
 | T51 | Responsive testing — iPhone Safari, Android Chrome, desktop browsers | Done |
 | T52 | Deploy to Vercel | Done |
-| T53 | Configure production domain (dbenger-job-application-klar.vercel.app) | Done |
+| T53 | Configure production domain (klar.dbenger.com) | Done |
 | T54 | Final QA — all pages, all MVPs, chat widget, OG preview, 404 | Done |
 
 ## Code Review Fixes
@@ -163,7 +163,16 @@
 | T110 | Enhance Rec8MVP — adjustable MDE, cost of test, confidence bands, readiness checklist | Done |
 | T111 | Enhance Rec9MVP — revenue impact EUR, with/without KLAR toggle, detail table, YoY trend | Done |
 | T112 | Enhance Rec10MVP — adjustable weights, convergence score, range overlap, recommendations | Done |
-| T113 | Commit and deploy enhanced MVPs | Pending |
+| T113 | Commit and deploy enhanced MVPs | Done |
+
+## Session 8: Polish & Domain Migration
+| Task | Description | Status |
+|------|-------------|--------|
+| T114 | Fix Rec2MVP bar chart colors — emerald/indigo/amber for visual distinction | Done |
+| T115 | Add "Full Portfolio at dbenger.com" button to about page header | Done |
+| T116 | Migrate domain from dbenger-job-application-klar.vercel.app → klar.dbenger.com | Done |
+| T117 | Remove old vercel.app alias | Done |
+| T118 | Update hero subtitle wording ("prototype ideas with working mock-up demos") | Done |
 
 ## Future Improvements (from code review)
 | Task | Description | Status |

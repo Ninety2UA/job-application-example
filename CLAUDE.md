@@ -1,7 +1,7 @@
 # KLAR Interactive Job Application — Dominik Benger
 
 ## Project Overview
-Interactive Next.js web app serving as Dominik Benger's job application to KLAR (getklar.com) — the eCom Data Operating System. Not a cover letter: a working prototype demonstrating deep business research, strategic thinking, and technical capability. Deployed to Vercel at `dbenger-job-application-klar.vercel.app`.
+Interactive Next.js web app serving as Dominik Benger's job application to KLAR (getklar.com) — the eCom Data Operating System. Not a cover letter: a working prototype demonstrating deep business research, strategic thinking, and technical capability. Deployed to Vercel at `klar.dbenger.com`.
 
 ## Startup Ritual
 **At the start of every new session, before taking any action, you MUST:**
@@ -235,7 +235,7 @@ The sibling project at `/Users/dbenger/projects/web-app-resume/` is the canonica
 ### Deployment
 - **OG image is critical.** The social preview when shared via WhatsApp/Slack is the literal first impression. Must show "Dominik Benger × KLAR" with KLAR-aligned design. Size: 1200×630px.
 - **Vercel auto-deploy** from GitHub push. If it doesn't trigger: `npx vercel --prod`.
-- **Target domain:** `dbenger-job-application-klar.vercel.app` (Vercel subdomain).
+- **Target domain:** `klar.dbenger.com` (custom subdomain on Vercel).
 
 ## Build Phases
 1. **Phase 0:** Project scaffolding (Next.js + Tailwind + fonts + git init + CLAUDE.md)
@@ -290,8 +290,8 @@ Each of the 10 recommendation MVPs must have:
 Always read `docs/STATUS.md` and `docs/tasks.md` before starting any work.
 
 ## Session Continuity
-- **Latest work (session 7):** Fixed chatbot (Gemini model expired, upgraded to gemini-3-flash-preview). Enhanced chatbot system prompt (audience awareness, tone, conversation strategy, natural closing). Reworked Core Capabilities → "What I Bring to KLAR" (KLAR-specific narrative). Enlarged embedded chat. Enhanced all 10 MVP prototypes with multiple controls, secondary charts, data tables, and dynamic insights (+4,247 lines).
-- **Current phase:** Phase 7+ — all features deployed, MVP enhancements pending review/commit
-- **Next steps:** User review of enhanced MVPs on localhost → commit & deploy; Design overhaul (T80-T85); Lighthouse audit (T48); content enhancement (T63)
-- **Uncommitted:** 10 enhanced MVP files (Rec1MVP-Rec10MVP.tsx) — awaiting user review
-- **Deployed:** https://dbenger-job-application-klar.vercel.app — up to date through commit 63dd52b (chatbot + about page changes deployed, MVP enhancements not yet deployed)
+- **Latest work (session 8):** Committed & deployed all 10 enhanced MVPs. Fixed Rec2MVP bar chart colors (emerald/indigo/amber). Added "Full Portfolio at dbenger.com" button to about page. Migrated domain from `dbenger-job-application-klar.vercel.app` → `klar.dbenger.com`. Updated hero subtitle wording.
+- **Current phase:** Phase 7+ — all features built and deployed
+- **Next steps:** Commit hero subtitle change; Design overhaul (T80-T85); Lighthouse audit (T48); content enhancement (T63)
+- **Uncommitted:** `src/app/page.tsx` — hero subtitle text tweak ("10 prototype ideas with working mock-up demos")
+- **Deployed:** https://klar.dbenger.com — up to date through commit 0fb58ab

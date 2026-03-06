@@ -35,7 +35,7 @@ export default function Home() {
             transition={{ delay: 0.35 }}
             className="mx-auto mt-6 max-w-xl text-lg text-muted"
           >
-            Deep business research, 10 strategic prototypes with working demos,
+            Deep business research, 10 prototype ideas with working mock-up demos,
             and an AI assistant — all built for KLAR.
           </motion.p>
           <motion.div
