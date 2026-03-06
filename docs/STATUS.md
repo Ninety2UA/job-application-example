@@ -30,13 +30,18 @@
 | 903efc7 | style: make Download Resume button green on about page |
 | f44f7e7–2bcc406 | iterate on about page proof point stats |
 | b3333b6 | replace proof point stats with Core Capabilities cards |
+| 2c5920a | fix: upgrade Gemini model to 3-flash-preview and embed capabilities into KLAR narrative |
+| 9ec3b59 | enhance chatbot system prompt with audience awareness, tone, and conversation strategy |
+| d3600e3 | style: enlarge embedded chat, reduce gap to CTA button |
+| 63dd52b | revert: restore original chat color scheme |
 
 ## Current state
-- **Git:** `main` branch, 21 commits, clean working tree
+- **Git:** `main` branch, 25 commits, 10 uncommitted MVP enhancement files
 - **Build:** Passes cleanly (`npm run build`)
-- **Code:** 10 MVPs, embedded chat, Core Capabilities cards, Download Resume on about page
-- **Naming:** "Recommendations" renamed to "Prototypes" site-wide; "About" nav → "Why KLAR + Dominik"
-- **Deployment:** Live at https://dbenger-job-application-klar.vercel.app — fully up to date
+- **Code:** 10 advanced MVPs (enhanced with multi-control, secondary charts, tables, insights), embedded chat, "What I Bring to KLAR" cards, Download Resume
+- **Chatbot:** Gemini 3 Flash Preview, temp 0.7, enhanced system prompt with audience awareness
+- **Naming:** "Prototypes" site-wide; "Why KLAR + Dominik" nav
+- **Deployment:** Live at https://dbenger-job-application-klar.vercel.app — chatbot + about page deployed; MVP enhancements not yet deployed
 - **Vercel:** Deployment Protection disabled for public access
 
 ### Route Map
@@ -52,8 +57,8 @@
 ```
 
 ## What's next
-- **Design overhaul:** /ui-ux-pro-max recommendations barely applied — typography scale, card redesign, gradient accents, chart styling (T80-T85)
+- **MVP review & deploy:** User reviewing enhanced MVPs on localhost → commit & deploy
+- **Design overhaul:** Typography scale, card redesign, gradient accents, chart styling (T80-T85)
 - **Performance audit:** Lighthouse score, bundle size check (T48)
 - **Content enhancement:** Incorporate research findings into analysis page (T63)
-- **Responsive testing:** Prototypes 6-10 need mobile testing
-- **Server rendering:** Consider extracting animations to client wrappers (improves LCP)
+- **Responsive testing:** Enhanced MVPs need mobile testing (significantly more content now)

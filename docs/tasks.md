@@ -146,6 +146,25 @@
 | T84 | Navigation polish (active states, transitions) | Pending |
 | T85 | Overall spacing and visual hierarchy pass | Pending |
 
+## Session 7: Chatbot Fix + MVP Enhancement
+| Task | Description | Status |
+|------|-------------|--------|
+| T99 | Fix Gemini model (gemini-2.5-flash-preview-05-20 expired → gemini-3-flash-preview) | Done |
+| T100 | Enhance chatbot system prompt (audience awareness, tone, strategy, closing) | Done |
+| T101 | Rework Core Capabilities → "What I Bring to KLAR" (KLAR-specific narrative) | Done |
+| T102 | Enlarge embedded chat (max-w-3xl, 260/400px height, reduced gap) | Done |
+| T103 | Enhance Rec1MVP — time period tabs, data quality table, revenue at risk, dynamic insights | Done |
+| T104 | Enhance Rec2MVP — ROAS per channel, CPA target, scenario compare, efficiency table | Done |
+| T105 | Enhance Rec3MVP — time remaining, health score gauge, benchmarks, feature unlocks, milestones | Done |
+| T106 | Enhance Rec4MVP — creative type filter, heatmap table, scatter plot, budget reallocation | Done |
+| T107 | Enhance Rec5MVP — pipeline value, member detail panel, conversion funnel, engagement trend | Done |
+| T108 | Enhance Rec6MVP — %/absolute toggle, budget impact table, variance chart, drill-down | Done |
+| T109 | Enhance Rec7MVP — all-channels overlay, budget optimizer, marginal revenue table | Done |
+| T110 | Enhance Rec8MVP — adjustable MDE, cost of test, confidence bands, readiness checklist | Done |
+| T111 | Enhance Rec9MVP — revenue impact EUR, with/without KLAR toggle, detail table, YoY trend | Done |
+| T112 | Enhance Rec10MVP — adjustable weights, convergence score, range overlap, recommendations | Done |
+| T113 | Commit and deploy enhanced MVPs | Pending |
+
 ## Future Improvements (from code review)
 | Task | Description | Status |
 |------|-------------|--------|

@@ -290,8 +290,8 @@ Each of the 10 recommendation MVPs must have:
 Always read `docs/STATUS.md` and `docs/tasks.md` before starting any work.
 
 ## Session Continuity
-- **Latest work (session 6):** Renamed "Recommendations" → "Prototypes" site-wide (routes, types, nav, UI text, metadata, OG image). Renamed nav "About" → "Why KLAR + Dominik" with homepage CTA. Added Download Resume button to about page. Replaced proof point stats with Core Capabilities cards. Fixed homepage scroll-to-bottom bug. Made View Prototypes button green.
-- **Current phase:** Phase 7+ complete — all features deployed, polish/design overhaul pending
-- **Next steps:** Design overhaul (T80-T85); Lighthouse audit (T48); content enhancement (T63); responsive testing of prototypes 6-10
-- **Uncommitted:** None (only untracked .playwright-mcp/ and screenshots/ dirs)
-- **Deployed:** https://dbenger-job-application-klar.vercel.app — fully up to date (commit b3333b6)
+- **Latest work (session 7):** Fixed chatbot (Gemini model expired, upgraded to gemini-3-flash-preview). Enhanced chatbot system prompt (audience awareness, tone, conversation strategy, natural closing). Reworked Core Capabilities → "What I Bring to KLAR" (KLAR-specific narrative). Enlarged embedded chat. Enhanced all 10 MVP prototypes with multiple controls, secondary charts, data tables, and dynamic insights (+4,247 lines).
+- **Current phase:** Phase 7+ — all features deployed, MVP enhancements pending review/commit
+- **Next steps:** User review of enhanced MVPs on localhost → commit & deploy; Design overhaul (T80-T85); Lighthouse audit (T48); content enhancement (T63)
+- **Uncommitted:** 10 enhanced MVP files (Rec1MVP-Rec10MVP.tsx) — awaiting user review
+- **Deployed:** https://dbenger-job-application-klar.vercel.app — up to date through commit 63dd52b (chatbot + about page changes deployed, MVP enhancements not yet deployed)
