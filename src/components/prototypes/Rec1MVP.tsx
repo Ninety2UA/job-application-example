@@ -64,6 +64,24 @@ function formatCurrency(value: number): string {
   return `$${value}`;
 }
 
+// --- Custom Tooltip ---
+
+function BarTooltipContent({ active, payload }: { active?: boolean; payload?: Array<{ payload: Record<string, unknown> }> }) {
+  if (!active || !payload || payload.length === 0) return null;
+  const d = payload[0].payload;
+  const status = String(d.status);
+  const color = confidenceColors[status] ?? "#a1a1aa";
+  return (
+    <div style={{ background: "#141414", border: "1px solid #27272a", borderRadius: 12, fontSize: 12, padding: "8px 12px" }}>
+      <p className="text-foreground font-medium">{String(d.name)}</p>
+      <p className="font-semibold mt-1" style={{ color }}>Confidence: {Number(d.confidence)}%</p>
+      <p className="text-muted">Revenue: {formatCurrency(Number(d.revenue))}</p>
+      <p className="text-muted">Pixel Health: {Number(d.pixelHealth)}%</p>
+      <p className="text-muted">Match Rate: {Number(d.matchRate)}%</p>
+    </div>
+  );
+}
+
 // --- Component ---
 
 export default function Rec1MVP() {
@@ -191,10 +209,7 @@ export default function Rec1MVP() {
             <CartesianGrid strokeDasharray="3 3" stroke="#27272a" />
             <XAxis type="number" domain={[0, 100]} tick={{ fill: "#a1a1aa", fontSize: 12 }} />
             <YAxis dataKey="name" type="category" tick={{ fill: "#a1a1aa", fontSize: 12 }} width={80} />
-            <Tooltip
-              contentStyle={{ background: "#141414", border: "1px solid #27272a", borderRadius: 12, fontSize: 12 }}
-              formatter={(value) => [`${value}%`, "Confidence"]}
-            />
+            <Tooltip content={<BarTooltipContent />} />
             <Bar dataKey="confidence" radius={[0, 6, 6, 0]}>
               {data.map((entry, i) => (
                 <Cell key={i} fill={confidenceColors[entry.status]} />
