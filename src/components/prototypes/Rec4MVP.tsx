@@ -171,6 +171,7 @@ function ScatterTooltipContent({ active, payload }: { active?: boolean; payload?
       <p className="text-foreground font-medium">{String(d.name)}</p>
       <p className="text-muted">{String(d.channelLabel)}</p>
       <p className="text-emerald-400">ROAS: {Number(d.roas).toFixed(1)}x</p>
+      <p className="text-muted">CPA: ${Number(d.cpa)}</p>
       <p className="text-muted">Spend: ${Number(d.spend).toLocaleString()}</p>
     </div>
   );
@@ -259,15 +260,16 @@ export default function Rec4MVP() {
     return { rows, allValues };
   }, [filteredCreativeNames, selectedChannels, metric, sortMode]);
 
-  /* Scatter chart data (Spend vs ROAS) */
+  /* Scatter chart data (CPA vs ROAS, bubble size = spend) */
   const scatterData = useMemo(() => {
-    const points: Array<{ name: string; spend: number; roas: number; channel: Channel; channelLabel: string; z: number }> = [];
+    const points: Array<{ name: string; cpa: number; spend: number; roas: number; channel: Channel; channelLabel: string; z: number }> = [];
     for (const ch of selectedChannels) {
       for (const name of filteredCreativeNames) {
         const c = creativeData[ch].find((cr) => cr.name === name);
         if (c) {
           points.push({
             name: c.name,
+            cpa: c.cpa,
             spend: c.spend,
             roas: c.roas,
             channel: ch,
@@ -412,7 +414,7 @@ export default function Rec4MVP() {
         <div className="flex items-center justify-between mb-3">
           <div>
             <h4 className="text-sm font-semibold">Spend Efficiency</h4>
-            <p className="text-xs text-muted">Spend (x) vs ROAS (y) &mdash; bubble size = spend amount</p>
+            <p className="text-xs text-muted">CPA (x) vs ROAS (y) &mdash; bubble size = spend amount</p>
           </div>
         </div>
         <div className="h-56">
@@ -421,11 +423,11 @@ export default function Rec4MVP() {
               <CartesianGrid strokeDasharray="3 3" stroke="#27272a" />
               <XAxis
                 type="number"
-                dataKey="spend"
-                name="Spend"
+                dataKey="cpa"
+                name="CPA"
                 tick={{ fill: "#a1a1aa", fontSize: 10 }}
-                tickFormatter={(v: number) => `$${(v / 1000).toFixed(0)}k`}
-                label={{ value: "Spend", position: "insideBottom", offset: -5, fill: "#71717a", fontSize: 10 }}
+                tickFormatter={(v: number) => `$${v}`}
+                label={{ value: "CPA", position: "insideBottom", offset: -5, fill: "#71717a", fontSize: 10 }}
               />
               <YAxis
                 type="number"

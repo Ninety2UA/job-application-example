@@ -107,6 +107,24 @@ function FunnelStage({ label, count, total, color, isLast }: { label: string; co
   );
 }
 
+// --- Custom Scatter Tooltip ---
+
+function ScatterTooltipContent({ active, payload }: { active?: boolean; payload?: Array<{ payload: Record<string, unknown> }> }) {
+  if (!active || !payload || payload.length === 0) return null;
+  const d = payload[0].payload;
+  const seg = String(d.segment);
+  const color = segmentColors[seg] ?? "#a1a1aa";
+  return (
+    <div style={{ background: "#141414", border: "1px solid #27272a", borderRadius: 12, fontSize: 12, padding: "8px 12px" }}>
+      <p className="text-foreground font-medium">{String(d.name)}</p>
+      <p className="text-muted text-[11px]">{String(d.companySize)} &middot; {String(d.channel)}</p>
+      <p className="font-semibold mt-1" style={{ color }}>Intent Score: {Number(d.intentScore)}</p>
+      <p className="text-muted">Activity: {Number(d.activity)}</p>
+      <p className="text-muted">Topic Relevance: {Number(d.topicRelevance)}</p>
+    </div>
+  );
+}
+
 // --- Main Component ---
 
 export default function Rec5MVP() {
@@ -291,15 +309,7 @@ export default function Rec5MVP() {
               tick={{ fill: "#a1a1aa", fontSize: 12 }}
               label={{ value: "Topic Relevance", angle: -90, position: "insideLeft", fill: "#a1a1aa", fontSize: 11 }}
             />
-            <Tooltip
-              contentStyle={{ background: "#141414", border: "1px solid #27272a", borderRadius: 12, fontSize: 12 }}
-              formatter={(value, name) => [value, name]}
-              labelFormatter={(_, payload) => {
-                const item = payload[0]?.payload;
-                if (!item) return "";
-                return `${item.name} (Score: ${item.intentScore}, ${item.companySize})`;
-              }}
-            />
+            <Tooltip content={<ScatterTooltipContent />} />
             <Scatter
               data={filtered}
               cursor="pointer"
