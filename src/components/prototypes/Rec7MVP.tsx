@@ -319,7 +319,7 @@ export default function Rec7MVP() {
 
       {/* Stats row (single channel mode) */}
       {viewMode === "single" && (
-        <div className="mb-4 grid grid-cols-4 gap-3">
+        <div className="mb-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
           <div className="rounded-xl bg-background p-3 text-center">
             <p className="text-xl font-bold text-accent">
               {currentROAS.toFixed(1)}x
@@ -524,7 +524,7 @@ export default function Rec7MVP() {
           <h4 className="mb-3 text-sm font-semibold text-foreground">
             Marginal Revenue at Current Spend
           </h4>
-          <div className="overflow-hidden rounded-xl border border-card-border">
+          <div className="overflow-x-auto rounded-xl border border-card-border">
             <table className="w-full text-xs">
               <thead>
                 <tr className="border-b border-card-border bg-background">

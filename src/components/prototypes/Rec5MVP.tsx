@@ -528,7 +528,7 @@ export default function Rec5MVP() {
         <p className="mb-3 text-xs font-medium uppercase tracking-wider text-muted">
           All Members ({filtered.length})
         </p>
-        <div className="max-h-48 overflow-y-auto">
+        <div className="max-h-48 overflow-auto">
           <table className="w-full text-xs">
             <thead>
               <tr className="border-b border-card-border text-left text-muted">

@@ -278,7 +278,7 @@ export default function Rec8MVP() {
       </div>
 
       {/* Stats row */}
-      <div className="mb-4 grid grid-cols-4 gap-3">
+      <div className="mb-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
         <div className="rounded-xl bg-background p-3 text-center">
           <p
             className={`text-xl font-bold ${

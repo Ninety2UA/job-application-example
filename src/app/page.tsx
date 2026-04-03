@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="flex min-h-[calc(100vh-5rem)] items-center justify-center px-6">
+      <section className="flex min-h-0 items-center justify-center px-6 py-12 sm:min-h-[calc(100vh-5rem)] sm:py-0">
         <div className="mx-auto max-w-3xl text-center">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -109,7 +109,7 @@ export default function Home() {
       </section>
 
       {/* Embedded Chat */}
-      <section className="mt-[-2rem] px-6 pb-24">
+      <section className="px-6 pb-24">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
