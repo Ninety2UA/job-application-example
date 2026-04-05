@@ -184,6 +184,21 @@
 | T123 | Update .gitignore (exclude .playwright-mcp/, screenshots/) | Done |
 | T124 | Commit all pending changes and push full history to GitHub | Done |
 
+## Session 19: Chart Tooltip Polish
+| Task | Description | Status |
+|------|-------------|--------|
+| T125 | Rec4MVP: Change scatter X-axis from Spend to CPA (3-variable: CPA x ROAS x Spend) | Done |
+| T126 | Rec4MVP: Add CPA to scatter tooltip | Done |
+| T127 | Rec5MVP: Replace default scatter tooltip with custom component (member detail) | Done |
+| T128 | Rec1MVP: Replace default bar tooltip with custom component (channel detail) | Done |
+
+## Session 20: Mobile Layout Fixes
+| Task | Description | Status |
+|------|-------------|--------|
+| T129 | Fix homepage hero/chat overlap — remove mt-[-2rem], responsive min-height | Done |
+| T130 | Fix Rec7/Rec8/Rec9 stat grids — grid-cols-2 sm:grid-cols-4 | Done |
+| T131 | Fix Rec5/Rec7 table wrappers — add overflow-x-auto for mobile scroll | Done |
+
 ## Future Improvements (from code review)
 | Task | Description | Status |
 |------|-------------|--------|

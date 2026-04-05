@@ -290,9 +290,9 @@ Each of the 10 recommendation MVPs must have:
 Always read `docs/STATUS.md` and `docs/tasks.md` before starting any work.
 
 ## Session Continuity
-- **Latest work (session 9):** Published to GitHub as `Ninety2UA/job-application-example`. Created comprehensive README.md with screenshots, architecture diagram, step-by-step build guide, adaptation instructions. Added MIT LICENSE. Took 6 fresh screenshots with Playwright. Committed all pending changes from session 8.
+- **Latest session (20):** Mobile layout fixes — resolved hero/chat text overlap on homepage, fixed cramped 4-column stat grids in Rec7/Rec8/Rec9, added table overflow scrolling for Rec5/Rec7. Verified with Playwright mobile screenshots.
 - **Current phase:** Phase 7+ — all features built, deployed, and published to GitHub
 - **Next steps:** Design overhaul (T80-T85); Lighthouse audit (T48); content enhancement (T63)
-- **Uncommitted:** None — clean working tree
-- **Deployed:** https://klar.dbenger.com — up to date through commit 86bfd5b
+- **Uncommitted:** Doc updates only (CLAUDE.md, STATUS.md, tasks.md)
+- **Deployed:** https://klar.dbenger.com — up to date through commit 5b9bd0b
 - **GitHub:** https://github.com/Ninety2UA/job-application-example (public)

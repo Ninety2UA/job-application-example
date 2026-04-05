@@ -38,12 +38,15 @@
 | b5be6f8 | enhance all 10 MVP prototypes with multi-control UIs, secondary charts, data tables, and distinct bar colors |
 | 0fb58ab | add portfolio link button to about page header |
 | 86bfd5b | add README, LICENSE, screenshots, and publish to GitHub |
+| dfb9de8 | fix: improve scatter chart axes and tooltips on Rec4 and Rec5 MVPs |
+| 33b8ae0 | fix: replace default tooltip with custom component on Rec1 Attribution Dashboard |
+| 5b9bd0b | fix: resolve mobile layout issues — hero/chat overlap and cramped MVP grids |
 
 ## Current state
-- **Git:** `main` branch, 28 commits, clean working tree, tracking `origin/main`
+- **Git:** `main` branch, 31 commits, clean working tree, tracking `origin/main`
 - **GitHub:** https://github.com/Ninety2UA/job-application-example (public)
 - **Build:** Passes cleanly (`npm run build`)
-- **Code:** 10 advanced MVPs (enhanced with multi-control, secondary charts, tables, insights), embedded chat, "What I Bring to KLAR" cards, Download Resume, portfolio link
+- **Code:** 10 advanced MVPs (custom tooltips, multi-control, secondary charts, tables, insights), embedded chat, "What I Bring to KLAR" cards, Download Resume, portfolio link
 - **Chatbot:** Gemini 3 Flash Preview, temp 0.7, enhanced system prompt with audience awareness
 - **Naming:** "Prototypes" site-wide; "Why KLAR + Dominik" nav
 - **Deployment:** Live at https://klar.dbenger.com (custom domain, old vercel.app alias removed)
@@ -66,4 +69,4 @@
 - **Design overhaul:** Typography scale, card redesign, gradient accents, chart styling (T80-T85)
 - **Performance audit:** Lighthouse score, bundle size check (T48)
 - **Content enhancement:** Incorporate research findings into analysis page (T63)
-- **Responsive testing:** Enhanced MVPs need mobile testing (significantly more content now)
+- **Responsive testing:** Mobile layout fixes deployed (session 20); further testing may be needed for edge cases
